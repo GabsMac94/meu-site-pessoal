@@ -5,48 +5,49 @@
     <title>Gabriel Macedo - Desenvolvedor</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="icon" href="favicon.png" type="image/png">
 </head>
 <body>
-    <header>
+    <header data-aos="fade-down">
         <img src="foto-gabriel.jpg" alt="Gabriel Macedo">
         <h1>Gabriel Macedo</h1>
         <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
     </header>
 
     <main>
-        <section class="sobre">
+        <section class="sobre" data-aos="fade-right">
             <h2>Sobre Mim</h2>
-            <p>Sou Gabriel Macedo, profissional em formação na área de Tecnologia da Informação, com sólida base em desenvolvimento de software e grande entusiasmo por inovação. Tenho experiência com linguagens como Java, C#, C e C++, além de sólida compreensão em lógica de programação, orientação a objetos e controle de versão com Git e GitHub. Atualmente curso Análise e Desenvolvimento de Sistemas na UNIP e busco oportunidades que me desafiem a crescer como desenvolvedor. Possuo fluência em inglês, ...
+            <p>Sou Gabriel Macedo, profissional em formação na área de Tecnologia da Informação, com sólida base em desenvolvimento de software e grande entusiasmo por inovação. Tenho experiência com linguagens como Java, C#, C e C++, além de sólida compreensão em lógica de programação, orientação a objetos e controle de versão com Git e GitHub. Atualmente curso Análise e Desenvolvimento de Sistemas na UNIP e busco oportunidades que me desafiem a crescer como desenvolvedor. Possuo fluência em inglês, vivên...
         </section>
 
-        <section class="curriculo">
+        <section class="curriculo" data-aos="zoom-in-up">
             <h2>Currículo</h2>
             <a href="CURRICULO-GABRIEL.pdf" download>Baixar Currículo em PDF</a>
         </section>
 
-        <section class="projetos">
-            <h2>Meus Projetos</h2>
+        <section class="projetos" data-aos="fade-up">
+            <h2>Projetos</h2>
             <div class="cards">
-                <div class="card">
-                    <h3>Simulador Smart TV</h3>
-                    <p>Projeto Java simulando funções de uma Smart TV com interação via terminal.</p>
+                <div class="card" data-aos="flip-left">
+                    <h3>Simulador de Smart TV</h3>
+                    <p>Projeto em Java que simula o funcionamento básico de uma Smart TV com canais, volume e liga/desliga.</p>
                     <a href="https://github.com/GabsMac94/projeto-smart-tv" target="_blank">Ver no GitHub</a>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="flip-right">
                     <h3>Sistema Bancário</h3>
-                    <p>Aplicação simples em Java para operações bancárias: saldo, saque e depósito.</p>
+                    <p>Aplicação simples em Java para simular operações bancárias como depósito, saque e extrato.</p>
                     <a href="https://github.com/GabsMac94/projeto-conta-banco" target="_blank">Ver no GitHub</a>
                 </div>
-                <div class="card">
-                    <h3>Mais Projetos</h3>
-                    <p>Acesse meu GitHub para ver outros projetos que venho desenvolvendo.</p>
-                    <a href="https://github.com/GabsMac94" target="_blank">Meu GitHub</a>
+                <div class="card" data-aos="flip-up">
+                    <h3>Ver todos os projetos</h3>
+                    <p>Acesse meu GitHub para ver todos os repositórios e códigos publicados.</p>
+                    <a href="https://github.com/GabsMac94" target="_blank">GitHub Completo</a>
                 </div>
             </div>
         </section>
 
-        <section class="redes">
+        <section class="redes" data-aos="fade-left">
             <h2>Redes Sociais</h2>
             <ul>
                 <li><a href="https://www.instagram.com/Macedo_bg/" target="_blank">Instagram</a></li>
@@ -56,8 +57,16 @@
         </section>
     </main>
 
-    <footer>
+    <footer data-aos="fade-up">
         <p>&copy; 2025 Gabriel Macedo. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+        once: true
+      });
+    </script>
 </body>
 </html>

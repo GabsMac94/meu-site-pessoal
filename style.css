@@ -5,14 +5,12 @@ body {
     margin: 0;
     padding: 0;
 }
-
 header {
     background-color: #1f1f1f;
     color: #ffffff;
     text-align: center;
     padding: 40px 20px;
 }
-
 header img {
     width: 140px;
     height: 140px;
@@ -20,31 +18,26 @@ header img {
     border: 3px solid #ffffff;
     margin-bottom: 15px;
 }
-
 h1 {
     margin: 10px 0;
     font-size: 2.2em;
 }
-
 main {
     padding: 30px 20px;
-    max-width: 1000px;
+    max-width: 900px;
     margin: auto;
 }
-
 h2 {
     color: #ffffff;
     border-bottom: 1px solid #333;
     padding-bottom: 5px;
     margin-top: 40px;
 }
-
 .sobre p {
     font-size: 1.05em;
     line-height: 1.6;
     color: #cccccc;
 }
-
 .curriculo a {
     display: inline-block;
     background-color: #1565c0;
@@ -55,73 +48,61 @@ h2 {
     font-weight: bold;
     margin-top: 10px;
 }
-
 .curriculo a:hover {
     background-color: #0d47a1;
 }
-
 .projetos .cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     gap: 20px;
-    justify-content: center;
     margin-top: 20px;
 }
-
 .card {
     background-color: #1e1e1e;
-    border-radius: 8px;
+    border: 1px solid #333;
     padding: 20px;
-    width: 300px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.5);
-    transition: transform 0.2s;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
 .card h3 {
-    color: #42a5f5;
-}
-
-.card p {
-    font-size: 0.95em;
-    color: #cccccc;
-    margin: 10px 0;
-}
-
-.card a {
     color: #90caf9;
+    margin-top: 0;
+}
+.card p {
+    color: #cccccc;
+}
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #1565c0;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
 }
-
 .card a:hover {
-    text-decoration: underline;
+    background-color: #0d47a1;
 }
-
 .redes ul {
     list-style: none;
     padding: 0;
     text-align: center;
 }
-
 .redes li {
     display: inline-block;
     margin: 10px 15px;
 }
-
 .redes a {
     text-decoration: none;
     color: #42a5f5;
     font-size: 1.1em;
 }
-
 .redes a:hover {
     color: #90caf9;
 }
-
 footer {
     background-color: #1f1f1f;
     color: #aaaaaa;
@@ -129,10 +110,10 @@ footer {
     padding: 20px;
     margin-top: 40px;
 }
-
-@media (max-width: 700px) {
-    .card {
-        width: 100%;
+@media (max-width: 768px) {
+    .projetos .cards {
+        flex-direction: column;
+        align-items: center;
     }
     header img {
         width: 100px;
@@ -140,9 +121,5 @@ footer {
     }
     h1 {
         font-size: 1.6em;
-    }
-    .curriculo a {
-        padding: 10px 14px;
-        font-size: 0.9em;
     }
 }
