@@ -28,7 +28,7 @@ h1 {
 
 main {
     padding: 30px 20px;
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -60,6 +60,47 @@ h2 {
     background-color: #0d47a1;
 }
 
+.projetos .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #42a5f5;
+}
+
+.card p {
+    font-size: 0.95em;
+    color: #cccccc;
+    margin: 10px 0;
+}
+
+.card a {
+    color: #90caf9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
 .redes ul {
     list-style: none;
     padding: 0;
@@ -89,23 +130,19 @@ footer {
     margin-top: 40px;
 }
 
-/* Responsividade */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+    .card {
+        width: 100%;
+    }
     header img {
         width: 100px;
         height: 100px;
     }
-
     h1 {
         font-size: 1.6em;
     }
-
     .curriculo a {
         padding: 10px 14px;
         font-size: 0.9em;
-    }
-
-    .redes a {
-        font-size: 1em;
     }
 }
